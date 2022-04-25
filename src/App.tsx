@@ -15,6 +15,7 @@ function App() {
             count is: {count}
           </button>
         </p>
+        <p>다시 시도하자</p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
