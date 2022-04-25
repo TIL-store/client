@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -15,6 +15,7 @@ function App() {
             count is: {count}
           </button>
         </p>
+        <p>test</p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
@@ -39,7 +40,7 @@ function App() {
         </p>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
