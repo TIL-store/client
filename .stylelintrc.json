@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier"
+  ],
+  "ignoreFiles": ["src/vite-env.d.ts"],
+  "overrides": [
+    {
+      "files": ["**/*.(ts|tsx)"],
+      "customSyntax": "@stylelint/postcss-css-in-js"
+    }
+  ]
+}
