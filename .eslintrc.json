@@ -23,7 +23,7 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "ignorePatterns": ["**/*.config.ts"], // "parserOptions.project" has been set for @typescript-eslint/parser 에러 해결
+  "ignorePatterns": ["**/*.config.ts", "mockServiceWorker.js"], // "parserOptions.project" has been set for @typescript-eslint/parser 에러 해결
   "rules": {
     "prettier/prettier": "error",
     "import/extensions": "off",
