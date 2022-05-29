@@ -56,7 +56,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js}": "eslint --cache --fix",
-    "*.{ts,tsx,js,css}": "stylelint --ignore-path .gitignore './src/**/*.(css|ts|tsx)' --fix",
+    "*.{ts,tsx,js,css}": "stylelint --fix",
     "*.{ts,tsx,js,css,md}": "prettier --write"
   },
   "msw": {
