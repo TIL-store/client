@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --cache --fix",
-    "lint:style": "stylelint --ignore-path .gitignore './src/**/*.(css|ts|tsx)' --fix",
+    "lint:style": "stylelint './src/**/*.(css|ts|tsx)' --fix",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.6.2",
     "axios": "^0.26.1",
+    "msw": "^0.41.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
@@ -57,5 +58,8 @@
     "*.{ts,tsx,js}": "eslint --cache --fix",
     "*.{ts,tsx,js,css}": "stylelint --ignore-path .gitignore './src/**/*.(css|ts|tsx)' --fix",
     "*.{ts,tsx,js,css,md}": "prettier --write"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
