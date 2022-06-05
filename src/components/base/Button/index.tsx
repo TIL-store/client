@@ -5,5 +5,9 @@ interface Props {
 }
 
 export default function CustomButton({ children }: Props) {
-  return <Button color="primary">{children}</Button>;
+  return (
+    <Button variant="outlined" component="a" href="/" color="primary">
+      {children}
+    </Button>
+  );
 }

@@ -1,5 +1,16 @@
 import { Pagination } from '@mui/material';
 
-export default function CustomPagination() {
-  return <Pagination />;
+interface Props {
+  count: number;
+}
+
+export default function CustomPagination({ count }: Props) {
+  return (
+    <Pagination
+      variant="outlined"
+      shape="rounded"
+      count={count}
+      color="primary"
+    />
+  );
 }
