@@ -3,8 +3,13 @@ import { ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;
+  sx?: { mb: string };
 }
 
-export default function CustomContainer({ children }: Props) {
-  return <Container>{children}</Container>;
+export default function CustomContainer({ children, sx }: Props) {
+  return <Container sx={sx}>{children}</Container>;
 }
+
+CustomContainer.defaultProps = {
+  sx: {},
+};

@@ -1,6 +1,12 @@
 import { styled } from '@mui/material';
 
-const TitleLink = styled('a')`
+export const BetweenWrapper = styled('div')`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const TitleLink = styled('a')`
   display: block;
   font-size: 1rem;
   ${({ theme }) => `
@@ -9,5 +15,3 @@ const TitleLink = styled('a')`
 
   text-decoration: none;
 `;
-
-export default TitleLink;
