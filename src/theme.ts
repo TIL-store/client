@@ -1,5 +1,18 @@
 import { createTheme } from '@mui/material/styles';
 
+declare module '@mui/material/styles' {
+  interface Theme {
+    dimensions: {
+      footerHeight: number;
+    };
+  }
+  interface ThemeOptions {
+    dimensions?: {
+      footerHeight?: number;
+    };
+  }
+}
+
 const theme = createTheme({
   palette: {
     mode: 'light',
@@ -14,6 +27,9 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: 'Noto Sans KR, sans-serif',
+  },
+  dimensions: {
+    footerHeight: 70,
   },
 });
 
